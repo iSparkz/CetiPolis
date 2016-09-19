@@ -1,7 +1,6 @@
 #CetiPolis
 
 ###Contributors
-
 *Junior Carvajal
 *Adrian Davalos
 *David Berrospe
