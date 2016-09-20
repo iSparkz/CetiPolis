@@ -26,3 +26,17 @@ C:\Users\departamento\Documents\Visual Studio 2012\Projects\CinepolisInterfaz\Ci
 C:\Users\departamento\Documents\Visual Studio 2012\Projects\CinepolisInterfaz\CinepolisInterfaz\obj\Debug\CinepolisInterfaz.exe
 C:\Users\departamento\Documents\Visual Studio 2012\Projects\CinepolisInterfaz\CinepolisInterfaz\obj\Debug\CinepolisInterfaz.xml
 C:\Users\departamento\Documents\Visual Studio 2012\Projects\CinepolisInterfaz\CinepolisInterfaz\obj\Debug\CinepolisInterfaz.pdb
+G:\7J1\Programacion Aplicada\Beta\CinepolisInterfaz\CinepolisInterfaz\bin\Debug\CinepolisInterfaz.exe.config
+G:\7J1\Programacion Aplicada\Beta\CinepolisInterfaz\CinepolisInterfaz\obj\Debug\CinepolisInterfaz.exe
+G:\7J1\Programacion Aplicada\Beta\CinepolisInterfaz\CinepolisInterfaz\obj\Debug\CinepolisInterfaz.xml
+G:\7J1\Programacion Aplicada\Beta\CinepolisInterfaz\CinepolisInterfaz\obj\Debug\CinepolisInterfaz.pdb
+G:\7J1\Programacion Aplicada\Beta\CinepolisInterfaz\CinepolisInterfaz\bin\Debug\CinepolisInterfaz.exe
+G:\7J1\Programacion Aplicada\Beta\CinepolisInterfaz\CinepolisInterfaz\bin\Debug\CinepolisInterfaz.pdb
+G:\7J1\Programacion Aplicada\Beta\CinepolisInterfaz\CinepolisInterfaz\bin\Debug\CinepolisInterfaz.xml
+G:\7J1\Programacion Aplicada\Beta\CinepolisInterfaz\CinepolisInterfaz\obj\Debug\CinepolisInterfaz.FormEliminarFuncion.resources
+G:\7J1\Programacion Aplicada\Beta\CinepolisInterfaz\CinepolisInterfaz\obj\Debug\CinepolisInterfaz.FormInicioSesion.resources
+G:\7J1\Programacion Aplicada\Beta\CinepolisInterfaz\CinepolisInterfaz\obj\Debug\CinepolisInterfaz.FormAgregarFuncion.resources
+G:\7J1\Programacion Aplicada\Beta\CinepolisInterfaz\CinepolisInterfaz\obj\Debug\CinepolisInterfaz.FormMenuInicial.resources
+G:\7J1\Programacion Aplicada\Beta\CinepolisInterfaz\CinepolisInterfaz\obj\Debug\CinepolisInterfaz.FormModificarFuncion.resources
+G:\7J1\Programacion Aplicada\Beta\CinepolisInterfaz\CinepolisInterfaz\obj\Debug\CinepolisInterfaz.Resources.resources
+G:\7J1\Programacion Aplicada\Beta\CinepolisInterfaz\CinepolisInterfaz\obj\Debug\CinepolisInterfaz.vbproj.GenerateResource.Cache

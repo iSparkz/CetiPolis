@@ -1,5 +1,7 @@
 ﻿Public Class FormMenuInicial
 
+    Protected DatosForm1 As New FormInicioSesion()
+
     Private Sub btnAgregar_Click(sender As Object, e As EventArgs) Handles btnAgregar.Click
         Me.Hide()
         FormAgregarFuncion.Show()
@@ -22,5 +24,9 @@
     Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
         Me.Hide()
         FormEliminarFuncion.Show()
+    End Sub
+
+    Private Sub FormMenuInicial_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        lblBienvenido.Text = "Bienvenido al sistema de gestión Cetipolis <" + FormInicioSesion.myReader(0) + ">"
     End Sub
 End Class
