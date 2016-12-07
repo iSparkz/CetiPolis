@@ -28,12 +28,15 @@ Partial Class FormEliminarFuncion
         Me.lblComplejo = New System.Windows.Forms.Label()
         Me.cboComplejo = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'cboNombre
         '
         Me.cboNombre.FormattingEnabled = True
-        Me.cboNombre.Location = New System.Drawing.Point(34, 83)
+        Me.cboNombre.Location = New System.Drawing.Point(34, 101)
         Me.cboNombre.Name = "cboNombre"
         Me.cboNombre.Size = New System.Drawing.Size(200, 21)
         Me.cboNombre.TabIndex = 36
@@ -41,7 +44,7 @@ Partial Class FormEliminarFuncion
         '
         'btnEliminar
         '
-        Me.btnEliminar.Location = New System.Drawing.Point(97, 121)
+        Me.btnEliminar.Location = New System.Drawing.Point(97, 139)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(75, 23)
         Me.btnEliminar.TabIndex = 37
@@ -53,7 +56,7 @@ Partial Class FormEliminarFuncion
         Me.lblComplejo.AutoSize = True
         Me.lblComplejo.BackColor = System.Drawing.Color.Transparent
         Me.lblComplejo.ForeColor = System.Drawing.SystemColors.Window
-        Me.lblComplejo.Location = New System.Drawing.Point(31, 11)
+        Me.lblComplejo.Location = New System.Drawing.Point(31, 29)
         Me.lblComplejo.Name = "lblComplejo"
         Me.lblComplejo.Size = New System.Drawing.Size(53, 13)
         Me.lblComplejo.TabIndex = 50
@@ -62,7 +65,7 @@ Partial Class FormEliminarFuncion
         'cboComplejo
         '
         Me.cboComplejo.FormattingEnabled = True
-        Me.cboComplejo.Location = New System.Drawing.Point(34, 27)
+        Me.cboComplejo.Location = New System.Drawing.Point(34, 45)
         Me.cboComplejo.Name = "cboComplejo"
         Me.cboComplejo.Size = New System.Drawing.Size(200, 21)
         Me.cboComplejo.TabIndex = 49
@@ -73,11 +76,26 @@ Partial Class FormEliminarFuncion
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.ForeColor = System.Drawing.SystemColors.Window
-        Me.Label1.Location = New System.Drawing.Point(31, 67)
+        Me.Label1.Location = New System.Drawing.Point(31, 85)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(109, 13)
         Me.Label1.TabIndex = 51
         Me.Label1.Text = "Nombre de la pelicula"
+        '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AyudaToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(274, 24)
+        Me.MenuStrip1.TabIndex = 52
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'AyudaToolStripMenuItem
+        '
+        Me.AyudaToolStripMenuItem.Name = "AyudaToolStripMenuItem"
+        Me.AyudaToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
+        Me.AyudaToolStripMenuItem.Text = "Ayuda"
         '
         'FormEliminarFuncion
         '
@@ -91,14 +109,18 @@ Partial Class FormEliminarFuncion
         Me.Controls.Add(Me.cboComplejo)
         Me.Controls.Add(Me.btnEliminar)
         Me.Controls.Add(Me.cboNombre)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.DoubleBuffered = True
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.MaximizeBox = False
         Me.MaximumSize = New System.Drawing.Size(290, 340)
         Me.MinimumSize = New System.Drawing.Size(290, 340)
         Me.Name = "FormEliminarFuncion"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Eliminar Función"
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -108,4 +130,6 @@ Partial Class FormEliminarFuncion
     Friend WithEvents lblComplejo As Label
     Friend WithEvents cboComplejo As ComboBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents AyudaToolStripMenuItem As ToolStripMenuItem
 End Class

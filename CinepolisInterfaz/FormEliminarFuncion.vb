@@ -8,7 +8,8 @@
         Dim FormAux As New FormInicioSesion
         Dim Query As String
         Dim ConnectionString As String
-        ConnectionString = "Server=localhost\SQLExpress4;Database=db_Cetipolis;Trusted_Connection=True;"
+        ConnectionString = "Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\db_Cetipolis.mdf;" &
+            "Integrated Security=True;Connect Timeout=30"
         FormAux.myConn = New SqlClient.SqlConnection(ConnectionString)
         FormAux.myConn.Open()
         Query = "DELETE FROM tickets Where id_movie =" & id_Movie
@@ -28,7 +29,8 @@
         Dim Query As String
         Dim ConnectionString As String
         Dim Ciudad As String
-        ConnectionString = "Server=localhost\SQLExpress4;Database=db_Cetipolis;Trusted_Connection=True;"
+        ConnectionString = "Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\db_Cetipolis.mdf;" &
+            "Integrated Security=True;Connect Timeout=30"
         FormAux.myConn = New SqlClient.SqlConnection(ConnectionString)
         FormAux.myConn.Open()
         Query = "Select city,username From employees where username='" & FormInicioSesion.globalUsername & "'"
@@ -37,7 +39,7 @@
         myReader.Read()
         Ciudad = myReader("city")
         myReader.Close()
-        Query = "select cinemas.city,cinemas.name,employees.city FROM employees INNER JOIN cinemas ON cinemas.city = employees.city WHERE cinemas.city ='Guadalajara'"
+        Query = "select cinemas.city,cinemas.name,employees.city FROM employees INNER JOIN cinemas ON cinemas.city = employees.city WHERE cinemas.city ='" & Ciudad & "'"
         myCmd = New SqlClient.SqlCommand(Query, FormAux.myConn)
         myReader = myCmd.ExecuteReader()
         While (myReader.Read())
@@ -59,7 +61,8 @@
         Dim Query As String
         Dim FormAux As New FormInicioSesion
         Dim ConnectionString As String
-        ConnectionString = "Server=localhost\SQLExpress4;Database=db_Cetipolis;Trusted_Connection=True;"
+        ConnectionString = "Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\db_Cetipolis.mdf;" &
+            "Integrated Security=True;Connect Timeout=30"
         FormAux.myConn = New SqlClient.SqlConnection(ConnectionString)
         FormAux.myConn.Open()
         Query = "Select * From Movies INNER JOIN cinemas ON cinemas.id_cinema = movies.id_cinema Where cinemas.name ='" & cboComplejo.Text & "'"
@@ -73,11 +76,16 @@
         FormAux.myConn.Close()
     End Sub
 
+    Private Sub AyudaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AyudaToolStripMenuItem.Click
+        Process.Start("CETIPolis.chm")
+    End Sub
+
     Private Sub cboNombre_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboNombre.SelectedIndexChanged
         Dim FormAux As New FormInicioSesion
         Dim Query As String
         Dim ConnectionString As String
-        ConnectionString = "Server=localhost\SQLExpress4;Database=db_Cetipolis;Trusted_Connection=True;"
+        ConnectionString = "Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\db_Cetipolis.mdf;" &
+            "Integrated Security=True;Connect Timeout=30"
         FormAux.myConn = New SqlClient.SqlConnection(ConnectionString)
         FormAux.myConn.Open()
         Query = "Select id_movie,movieName,id_cinema FROM movies Where id_cinema =" & id_Cinema & " and movieName='" & cboNombre.Text & "'"

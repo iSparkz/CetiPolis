@@ -40,18 +40,23 @@ G:\7J1\Programacion Aplicada\Beta\CinepolisInterfaz\CinepolisInterfaz\obj\Debug\
 G:\7J1\Programacion Aplicada\Beta\CinepolisInterfaz\CinepolisInterfaz\obj\Debug\CinepolisInterfaz.FormModificarFuncion.resources
 G:\7J1\Programacion Aplicada\Beta\CinepolisInterfaz\CinepolisInterfaz\obj\Debug\CinepolisInterfaz.Resources.resources
 G:\7J1\Programacion Aplicada\Beta\CinepolisInterfaz\CinepolisInterfaz\obj\Debug\CinepolisInterfaz.vbproj.GenerateResource.Cache
-C:\Users\Sparks\Downloads\CetiPolis-hashVersion\CinepolisInterfaz\bin\Debug\CinepolisInterfaz.exe.config
-C:\Users\Sparks\Downloads\CetiPolis-hashVersion\CinepolisInterfaz\obj\Debug\CinepolisInterfaz.exe
-C:\Users\Sparks\Downloads\CetiPolis-hashVersion\CinepolisInterfaz\obj\Debug\CinepolisInterfaz.xml
-C:\Users\Sparks\Downloads\CetiPolis-hashVersion\CinepolisInterfaz\obj\Debug\CinepolisInterfaz.pdb
-C:\Users\Sparks\Downloads\CetiPolis-hashVersion\CinepolisInterfaz\bin\Debug\CinepolisInterfaz.exe
-C:\Users\Sparks\Downloads\CetiPolis-hashVersion\CinepolisInterfaz\bin\Debug\CinepolisInterfaz.pdb
-C:\Users\Sparks\Downloads\CetiPolis-hashVersion\CinepolisInterfaz\bin\Debug\CinepolisInterfaz.xml
-C:\Users\Sparks\Downloads\CetiPolis-hashVersion\CinepolisInterfaz\obj\Debug\CinepolisInterfaz.FormEliminarFuncion.resources
-C:\Users\Sparks\Downloads\CetiPolis-hashVersion\CinepolisInterfaz\obj\Debug\CinepolisInterfaz.FormInicioSesion.resources
-C:\Users\Sparks\Downloads\CetiPolis-hashVersion\CinepolisInterfaz\obj\Debug\CinepolisInterfaz.FormAgregarFuncion.resources
-C:\Users\Sparks\Downloads\CetiPolis-hashVersion\CinepolisInterfaz\obj\Debug\CinepolisInterfaz.FormMenuInicial.resources
-C:\Users\Sparks\Downloads\CetiPolis-hashVersion\CinepolisInterfaz\obj\Debug\CinepolisInterfaz.FormModificarFuncion.resources
-C:\Users\Sparks\Downloads\CetiPolis-hashVersion\CinepolisInterfaz\obj\Debug\CinepolisInterfaz.Resources.resources
 C:\Users\Sparks\Downloads\CetiPolis-hashVersion\CinepolisInterfaz\obj\Debug\CinepolisInterfaz.vbproj.GenerateResource.Cache
-C:\Users\Sparks\Downloads\CetiPolis-hashVersion\CinepolisInterfaz\obj\Debug\CinepolisInterfaz.vbprojResolveAssemblyReference.cache
+C:\Users\Sparks\Downloads\CetiPolis-hashVersion\CinepolisInterfaz\bin\Debug\Cetipolis.exe.config
+C:\Users\Sparks\Downloads\CetiPolis-hashVersion\CinepolisInterfaz\bin\Debug\Cetipolis.exe.manifest
+C:\Users\Sparks\Downloads\CetiPolis-hashVersion\CinepolisInterfaz\bin\Debug\Cetipolis.application
+C:\Users\Sparks\Downloads\CetiPolis-hashVersion\CinepolisInterfaz\bin\Debug\Cetipolis.exe
+C:\Users\Sparks\Downloads\CetiPolis-hashVersion\CinepolisInterfaz\bin\Debug\Cetipolis.pdb
+C:\Users\Sparks\Downloads\CetiPolis-hashVersion\CinepolisInterfaz\bin\Debug\Cetipolis.xml
+C:\Users\Sparks\Downloads\CetiPolis-hashVersion\CinepolisInterfaz\obj\Debug\Cetipolis.FormEliminarFuncion.resources
+C:\Users\Sparks\Downloads\CetiPolis-hashVersion\CinepolisInterfaz\obj\Debug\Cetipolis.FormInicioSesion.resources
+C:\Users\Sparks\Downloads\CetiPolis-hashVersion\CinepolisInterfaz\obj\Debug\Cetipolis.FormAgregarFuncion.resources
+C:\Users\Sparks\Downloads\CetiPolis-hashVersion\CinepolisInterfaz\obj\Debug\Cetipolis.FormMenuInicial.resources
+C:\Users\Sparks\Downloads\CetiPolis-hashVersion\CinepolisInterfaz\obj\Debug\Cetipolis.FormModificarFuncion.resources
+C:\Users\Sparks\Downloads\CetiPolis-hashVersion\CinepolisInterfaz\obj\Debug\Cetipolis.Resources.resources
+C:\Users\Sparks\Downloads\CetiPolis-hashVersion\CinepolisInterfaz\obj\Debug\Cetipolis.exe.manifest
+C:\Users\Sparks\Downloads\CetiPolis-hashVersion\CinepolisInterfaz\obj\Debug\Cetipolis.application
+C:\Users\Sparks\Downloads\CetiPolis-hashVersion\CinepolisInterfaz\obj\Debug\Cetipolis.exe
+C:\Users\Sparks\Downloads\CetiPolis-hashVersion\CinepolisInterfaz\obj\Debug\Cetipolis.xml
+C:\Users\Sparks\Downloads\CetiPolis-hashVersion\CinepolisInterfaz\obj\Debug\Cetipolis.pdb
+C:\Users\Sparks\Downloads\CetiPolis-hashVersion\CinepolisInterfaz\bin\Debug\db_Cetipolis.mdf
+C:\Users\Sparks\Downloads\CetiPolis-hashVersion\CinepolisInterfaz\bin\Debug\db_Cetipolis_log.ldf

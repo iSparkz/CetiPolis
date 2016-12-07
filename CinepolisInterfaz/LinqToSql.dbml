@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="db_Cetipolis" Class="LinqToSqlDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=localhost\SQLEXPRESS4;Initial Catalog=db_Cetipolis;Integrated Security=True" SettingsObjectName="Cetipolis.My.MySettings" SettingsPropertyName="db_CetipolisConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.cinemas" Member="cinemas">
+    <Type Name="cinemas">
+      <Column Name="id_cinema" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="city" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="cinemas_movies" Member="movies" ThisKey="id_cinema" OtherKey="id_cinema" Type="movies" />
+    </Type>
+  </Table>
+  <Table Name="dbo.users" Member="users">
+    <Type Name="users">
+      <Column Name="id_user" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="lastName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="username" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="password" Type="System.String" DbType="VarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="eMail" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="users_tickets" Member="tickets" ThisKey="id_user" OtherKey="id_user" Type="tickets" />
+    </Type>
+  </Table>
+  <Table Name="dbo.movies" Member="movies">
+    <Type Name="movies">
+      <Column Name="id_movie" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="movieName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="id_room" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="startDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="finishDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="startTime" Type="System.TimeSpan" DbType="Time NOT NULL" CanBeNull="false" />
+      <Column Name="finishTime" Type="System.TimeSpan" DbType="Time NOT NULL" CanBeNull="false" />
+      <Column Name="Price" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="movieImage" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="id_cinema" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="movies_tickets" Member="tickets" ThisKey="id_movie" OtherKey="id_movie" Type="tickets" />
+      <Association Name="cinemas_movies" Member="cinemas" ThisKey="id_cinema" OtherKey="id_cinema" Type="cinemas" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tickets" Member="tickets">
+    <Type Name="tickets">
+      <Column Name="id_ticket" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_user" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id_movie" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id_room" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="seat" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="price" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Association Name="movies_tickets" Member="movies" ThisKey="id_movie" OtherKey="id_movie" Type="movies" IsForeignKey="true" />
+      <Association Name="users_tickets" Member="users" ThisKey="id_user" OtherKey="id_user" Type="users" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

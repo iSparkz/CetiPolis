@@ -18,9 +18,19 @@ Public Class FormInicioSesion
         Return StringBuilder.ToString()
     End Function
 
+    Public Sub New()
+
+        ' This call is required by the designer.
+        InitializeComponent()
+
+        ' Add any initialization after the InitializeComponent() call.
+
+    End Sub
+
     Private Sub btnIngresar_Click(sender As Object, e As EventArgs) Handles btnIngresar.Click
         Dim ConnectionString As String
-        ConnectionString = "Server=localhost\SQLExpress4;Database=db_Cetipolis;Trusted_Connection=True;"
+        ConnectionString = "Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\db_Cetipolis.mdf;" &
+            "Integrated Security=True;Connect Timeout=30"
         Dim myConn As New SqlConnection(ConnectionString)
         myConn.Open()
         Dim sqlQuery As String
@@ -50,6 +60,10 @@ Public Class FormInicioSesion
 
     Private Sub FormInicioSesion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    End Sub
+
+    Private Sub AyudaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AyudaToolStripMenuItem.Click
+        Process.Start("CETIPolis.chm")
     End Sub
 End Class
 

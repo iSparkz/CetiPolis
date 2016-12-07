@@ -22,6 +22,7 @@ Partial Class FormAgregarFuncion
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormAgregarFuncion))
         Me.btnAgregarFuncion = New System.Windows.Forms.Button()
         Me.txtNombreFuncion = New System.Windows.Forms.TextBox()
@@ -48,13 +49,17 @@ Partial Class FormAgregarFuncion
         Me.opfAbrir = New System.Windows.Forms.OpenFileDialog()
         Me.cboComplejo = New System.Windows.Forms.ComboBox()
         Me.lblComplejo = New System.Windows.Forms.Label()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.pbImagen, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnAgregarFuncion
         '
         Me.btnAgregarFuncion.BackColor = System.Drawing.SystemColors.Window
-        Me.btnAgregarFuncion.Location = New System.Drawing.Point(316, 524)
+        Me.btnAgregarFuncion.Location = New System.Drawing.Point(316, 530)
         Me.btnAgregarFuncion.Name = "btnAgregarFuncion"
         Me.btnAgregarFuncion.Size = New System.Drawing.Size(103, 23)
         Me.btnAgregarFuncion.TabIndex = 6
@@ -63,7 +68,7 @@ Partial Class FormAgregarFuncion
         '
         'txtNombreFuncion
         '
-        Me.txtNombreFuncion.Location = New System.Drawing.Point(30, 86)
+        Me.txtNombreFuncion.Location = New System.Drawing.Point(30, 92)
         Me.txtNombreFuncion.Name = "txtNombreFuncion"
         Me.txtNombreFuncion.Size = New System.Drawing.Size(221, 20)
         Me.txtNombreFuncion.TabIndex = 0
@@ -73,7 +78,7 @@ Partial Class FormAgregarFuncion
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.ForeColor = System.Drawing.SystemColors.Window
-        Me.Label1.Location = New System.Drawing.Point(27, 70)
+        Me.Label1.Location = New System.Drawing.Point(27, 76)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(109, 13)
         Me.Label1.TabIndex = 2
@@ -81,7 +86,7 @@ Partial Class FormAgregarFuncion
         '
         'txtSala
         '
-        Me.txtSala.Location = New System.Drawing.Point(30, 141)
+        Me.txtSala.Location = New System.Drawing.Point(30, 147)
         Me.txtSala.Name = "txtSala"
         Me.txtSala.Size = New System.Drawing.Size(221, 20)
         Me.txtSala.TabIndex = 1
@@ -91,7 +96,7 @@ Partial Class FormAgregarFuncion
         Me.lblSala.AutoSize = True
         Me.lblSala.BackColor = System.Drawing.Color.Transparent
         Me.lblSala.ForeColor = System.Drawing.SystemColors.Window
-        Me.lblSala.Location = New System.Drawing.Point(30, 125)
+        Me.lblSala.Location = New System.Drawing.Point(30, 131)
         Me.lblSala.Name = "lblSala"
         Me.lblSala.Size = New System.Drawing.Size(28, 13)
         Me.lblSala.TabIndex = 4
@@ -100,7 +105,7 @@ Partial Class FormAgregarFuncion
         'dtpHoraFinal
         '
         Me.dtpHoraFinal.Format = System.Windows.Forms.DateTimePickerFormat.Time
-        Me.dtpHoraFinal.Location = New System.Drawing.Point(156, 253)
+        Me.dtpHoraFinal.Location = New System.Drawing.Point(156, 259)
         Me.dtpHoraFinal.Name = "dtpHoraFinal"
         Me.dtpHoraFinal.ShowUpDown = True
         Me.dtpHoraFinal.Size = New System.Drawing.Size(90, 20)
@@ -111,7 +116,7 @@ Partial Class FormAgregarFuncion
         '
         Me.dtpHoraInicio.CustomFormat = ""
         Me.dtpHoraInicio.Format = System.Windows.Forms.DateTimePickerFormat.Time
-        Me.dtpHoraInicio.Location = New System.Drawing.Point(30, 253)
+        Me.dtpHoraInicio.Location = New System.Drawing.Point(30, 259)
         Me.dtpHoraInicio.Name = "dtpHoraInicio"
         Me.dtpHoraInicio.ShowUpDown = True
         Me.dtpHoraInicio.Size = New System.Drawing.Size(90, 20)
@@ -121,7 +126,7 @@ Partial Class FormAgregarFuncion
         'dtpFechaFinal
         '
         Me.dtpFechaFinal.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpFechaFinal.Location = New System.Drawing.Point(156, 200)
+        Me.dtpFechaFinal.Location = New System.Drawing.Point(156, 206)
         Me.dtpFechaFinal.Name = "dtpFechaFinal"
         Me.dtpFechaFinal.Size = New System.Drawing.Size(90, 20)
         Me.dtpFechaFinal.TabIndex = 3
@@ -129,7 +134,7 @@ Partial Class FormAgregarFuncion
         'dtpFechaInicio
         '
         Me.dtpFechaInicio.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpFechaInicio.Location = New System.Drawing.Point(30, 200)
+        Me.dtpFechaInicio.Location = New System.Drawing.Point(30, 206)
         Me.dtpFechaInicio.Name = "dtpFechaInicio"
         Me.dtpFechaInicio.Size = New System.Drawing.Size(90, 20)
         Me.dtpFechaInicio.TabIndex = 2
@@ -139,7 +144,7 @@ Partial Class FormAgregarFuncion
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.ForeColor = System.Drawing.SystemColors.Window
-        Me.Label2.Location = New System.Drawing.Point(132, 206)
+        Me.Label2.Location = New System.Drawing.Point(132, 212)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(10, 13)
         Me.Label2.TabIndex = 39
@@ -150,7 +155,7 @@ Partial Class FormAgregarFuncion
         Me.lblFecha2.AutoSize = True
         Me.lblFecha2.BackColor = System.Drawing.Color.Transparent
         Me.lblFecha2.ForeColor = System.Drawing.SystemColors.Window
-        Me.lblFecha2.Location = New System.Drawing.Point(144, 177)
+        Me.lblFecha2.Location = New System.Drawing.Point(144, 183)
         Me.lblFecha2.Name = "lblFecha2"
         Me.lblFecha2.Size = New System.Drawing.Size(107, 13)
         Me.lblFecha2.TabIndex = 38
@@ -161,7 +166,7 @@ Partial Class FormAgregarFuncion
         Me.lblFecha1.AutoSize = True
         Me.lblFecha1.BackColor = System.Drawing.Color.Transparent
         Me.lblFecha1.ForeColor = System.Drawing.SystemColors.Window
-        Me.lblFecha1.Location = New System.Drawing.Point(27, 177)
+        Me.lblFecha1.Location = New System.Drawing.Point(27, 183)
         Me.lblFecha1.Name = "lblFecha1"
         Me.lblFecha1.Size = New System.Drawing.Size(79, 13)
         Me.lblFecha1.TabIndex = 37
@@ -172,7 +177,7 @@ Partial Class FormAgregarFuncion
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.ForeColor = System.Drawing.SystemColors.Window
-        Me.Label3.Location = New System.Drawing.Point(132, 253)
+        Me.Label3.Location = New System.Drawing.Point(132, 259)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(10, 13)
         Me.Label3.TabIndex = 36
@@ -183,7 +188,7 @@ Partial Class FormAgregarFuncion
         Me.lblHora2.AutoSize = True
         Me.lblHora2.BackColor = System.Drawing.Color.Transparent
         Me.lblHora2.ForeColor = System.Drawing.SystemColors.Window
-        Me.lblHora2.Location = New System.Drawing.Point(144, 234)
+        Me.lblHora2.Location = New System.Drawing.Point(144, 240)
         Me.lblHora2.Name = "lblHora2"
         Me.lblHora2.Size = New System.Drawing.Size(103, 13)
         Me.lblHora2.TabIndex = 35
@@ -194,7 +199,7 @@ Partial Class FormAgregarFuncion
         Me.lblHora1.AutoSize = True
         Me.lblHora1.BackColor = System.Drawing.Color.Transparent
         Me.lblHora1.ForeColor = System.Drawing.SystemColors.Window
-        Me.lblHora1.Location = New System.Drawing.Point(27, 234)
+        Me.lblHora1.Location = New System.Drawing.Point(27, 240)
         Me.lblHora1.Name = "lblHora1"
         Me.lblHora1.Size = New System.Drawing.Size(72, 13)
         Me.lblHora1.TabIndex = 34
@@ -202,7 +207,7 @@ Partial Class FormAgregarFuncion
         '
         'txtPrecio
         '
-        Me.txtPrecio.Location = New System.Drawing.Point(30, 299)
+        Me.txtPrecio.Location = New System.Drawing.Point(30, 305)
         Me.txtPrecio.Name = "txtPrecio"
         Me.txtPrecio.Size = New System.Drawing.Size(90, 20)
         Me.txtPrecio.TabIndex = 40
@@ -212,7 +217,7 @@ Partial Class FormAgregarFuncion
         Me.lblPrecio.AutoSize = True
         Me.lblPrecio.BackColor = System.Drawing.Color.Transparent
         Me.lblPrecio.ForeColor = System.Drawing.SystemColors.Window
-        Me.lblPrecio.Location = New System.Drawing.Point(27, 283)
+        Me.lblPrecio.Location = New System.Drawing.Point(27, 289)
         Me.lblPrecio.Name = "lblPrecio"
         Me.lblPrecio.Size = New System.Drawing.Size(40, 13)
         Me.lblPrecio.TabIndex = 41
@@ -223,7 +228,7 @@ Partial Class FormAgregarFuncion
         Me.lblDescripcion.AutoSize = True
         Me.lblDescripcion.BackColor = System.Drawing.Color.Transparent
         Me.lblDescripcion.ForeColor = System.Drawing.SystemColors.Window
-        Me.lblDescripcion.Location = New System.Drawing.Point(27, 408)
+        Me.lblDescripcion.Location = New System.Drawing.Point(27, 414)
         Me.lblDescripcion.Name = "lblDescripcion"
         Me.lblDescripcion.Size = New System.Drawing.Size(66, 13)
         Me.lblDescripcion.TabIndex = 42
@@ -231,7 +236,7 @@ Partial Class FormAgregarFuncion
         '
         'rtbDescripcion
         '
-        Me.rtbDescripcion.Location = New System.Drawing.Point(30, 424)
+        Me.rtbDescripcion.Location = New System.Drawing.Point(30, 430)
         Me.rtbDescripcion.Name = "rtbDescripcion"
         Me.rtbDescripcion.Size = New System.Drawing.Size(678, 94)
         Me.rtbDescripcion.TabIndex = 43
@@ -242,7 +247,7 @@ Partial Class FormAgregarFuncion
         Me.lblImagen.AutoSize = True
         Me.lblImagen.BackColor = System.Drawing.Color.Transparent
         Me.lblImagen.ForeColor = System.Drawing.SystemColors.Window
-        Me.lblImagen.Location = New System.Drawing.Point(455, 20)
+        Me.lblImagen.Location = New System.Drawing.Point(455, 26)
         Me.lblImagen.Name = "lblImagen"
         Me.lblImagen.Size = New System.Drawing.Size(113, 13)
         Me.lblImagen.TabIndex = 44
@@ -250,7 +255,7 @@ Partial Class FormAgregarFuncion
         '
         'pbImagen
         '
-        Me.pbImagen.Location = New System.Drawing.Point(458, 36)
+        Me.pbImagen.Location = New System.Drawing.Point(458, 42)
         Me.pbImagen.Name = "pbImagen"
         Me.pbImagen.Size = New System.Drawing.Size(250, 350)
         Me.pbImagen.TabIndex = 45
@@ -259,7 +264,7 @@ Partial Class FormAgregarFuncion
         'btnImagen
         '
         Me.btnImagen.BackColor = System.Drawing.SystemColors.Window
-        Me.btnImagen.Location = New System.Drawing.Point(520, 392)
+        Me.btnImagen.Location = New System.Drawing.Point(520, 398)
         Me.btnImagen.Name = "btnImagen"
         Me.btnImagen.Size = New System.Drawing.Size(125, 23)
         Me.btnImagen.TabIndex = 46
@@ -273,7 +278,7 @@ Partial Class FormAgregarFuncion
         'cboComplejo
         '
         Me.cboComplejo.FormattingEnabled = True
-        Me.cboComplejo.Location = New System.Drawing.Point(30, 36)
+        Me.cboComplejo.Location = New System.Drawing.Point(30, 42)
         Me.cboComplejo.Name = "cboComplejo"
         Me.cboComplejo.Size = New System.Drawing.Size(216, 21)
         Me.cboComplejo.TabIndex = 47
@@ -284,11 +289,31 @@ Partial Class FormAgregarFuncion
         Me.lblComplejo.AutoSize = True
         Me.lblComplejo.BackColor = System.Drawing.Color.Transparent
         Me.lblComplejo.ForeColor = System.Drawing.SystemColors.Window
-        Me.lblComplejo.Location = New System.Drawing.Point(27, 20)
+        Me.lblComplejo.Location = New System.Drawing.Point(27, 26)
         Me.lblComplejo.Name = "lblComplejo"
         Me.lblComplejo.Size = New System.Drawing.Size(53, 13)
         Me.lblComplejo.TabIndex = 48
         Me.lblComplejo.Text = "Complejo:"
+        '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
+        '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AyudaToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(734, 24)
+        Me.MenuStrip1.TabIndex = 50
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'AyudaToolStripMenuItem
+        '
+        Me.AyudaToolStripMenuItem.Name = "AyudaToolStripMenuItem"
+        Me.AyudaToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
+        Me.AyudaToolStripMenuItem.Text = "Ayuda"
         '
         'FormAgregarFuncion
         '
@@ -297,6 +322,7 @@ Partial Class FormAgregarFuncion
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(734, 562)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.lblComplejo)
         Me.Controls.Add(Me.cboComplejo)
         Me.Controls.Add(Me.btnImagen)
@@ -323,6 +349,7 @@ Partial Class FormAgregarFuncion
         Me.Controls.Add(Me.btnAgregarFuncion)
         Me.DoubleBuffered = True
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.MaximizeBox = False
         Me.MaximumSize = New System.Drawing.Size(750, 600)
         Me.MinimumSize = New System.Drawing.Size(750, 600)
@@ -330,6 +357,8 @@ Partial Class FormAgregarFuncion
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Agregar Función"
         CType(Me.pbImagen, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -359,4 +388,7 @@ Partial Class FormAgregarFuncion
     Friend WithEvents opfAbrir As OpenFileDialog
     Friend WithEvents cboComplejo As ComboBox
     Friend WithEvents lblComplejo As Label
+    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents AyudaToolStripMenuItem As ToolStripMenuItem
 End Class

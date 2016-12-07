@@ -16,7 +16,8 @@
         Dim Query As String
         Dim ConnectionString As String
         Dim Ciudad As String
-        ConnectionString = "Server=localhost\SQLExpress4;Database=db_Cetipolis;Trusted_Connection=True;"
+        ConnectionString = "Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\db_Cetipolis.mdf;" &
+            "Integrated Security=True;Connect Timeout=30"
         FormAux.myConn = New SqlClient.SqlConnection(ConnectionString)
         FormAux.myConn.Open()
 
@@ -26,7 +27,7 @@
         myReader.Read()
         Ciudad = myReader("city")
         myReader.Close()
-        Query = "select cinemas.city,cinemas.name,employees.city FROM employees INNER JOIN cinemas ON cinemas.city = employees.city WHERE cinemas.city ='Guadalajara'"
+        Query = "select cinemas.city,cinemas.name,employees.city FROM employees INNER JOIN cinemas ON cinemas.city = employees.city WHERE cinemas.city ='" & Ciudad & "'"
         myCmd = New SqlClient.SqlCommand(Query, FormAux.myConn)
         myReader = myCmd.ExecuteReader()
         While (myReader.Read())
@@ -41,7 +42,8 @@
         Dim FormAux As New FormInicioSesion
         Dim Query As String
         Dim ConnectionString As String
-        ConnectionString = "Server=localhost\SQLExpress4;Database=db_Cetipolis;Trusted_Connection=True;"
+        ConnectionString = "Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\db_Cetipolis.mdf;" &
+            "Integrated Security=True;Connect Timeout=30"
         FormAux.myConn = New SqlClient.SqlConnection(ConnectionString)
         FormAux.myConn.Open()
         Query = "UPDATE Movies SET id_room ='" & txtSala.Text & "',startDate = @startDate,finishDate = @finishDate,startTime = @startTime" &
@@ -71,7 +73,8 @@
         Dim FormAux As New FormInicioSesion
         Dim Query As String
         Dim ConnectionString As String
-        ConnectionString = "Server=localhost\SQLExpress4;Database=db_Cetipolis;Trusted_Connection=True;"
+        ConnectionString = "Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\db_Cetipolis.mdf;" &
+            "Integrated Security=True;Connect Timeout=30"
         FormAux.myConn = New SqlClient.SqlConnection(ConnectionString)
         FormAux.myConn.Open()
         Query = "Select * From Movies Where movieName ='" & cboNombre.Text & "'"
@@ -115,7 +118,8 @@
         Dim Query As String
         Dim FormAux As New FormInicioSesion
         Dim ConnectionString As String
-        ConnectionString = "Server=localhost\SQLExpress4;Database=db_Cetipolis;Trusted_Connection=True;"
+        ConnectionString = "Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\db_Cetipolis.mdf;" &
+            "Integrated Security=True;Connect Timeout=30"
         FormAux.myConn = New SqlClient.SqlConnection(ConnectionString)
         FormAux.myConn.Open()
         Query = "Select * From Movies INNER JOIN cinemas ON cinemas.id_cinema = movies.id_cinema Where cinemas.name ='" & cboComplejo.Text & "'"
@@ -126,6 +130,10 @@
         End While
         myReader.Close()
         FormAux.myConn.Close()
+    End Sub
+
+    Private Sub AyudaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AyudaToolStripMenuItem.Click
+        Process.Start("CETIPolis.chm")
     End Sub
 
     Private Sub btnImagen_Click(sender As Object, e As EventArgs) Handles btnImagen.Click

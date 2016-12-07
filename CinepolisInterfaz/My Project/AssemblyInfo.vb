@@ -8,10 +8,10 @@ Imports System.Runtime.InteropServices
 
 ' Revisar los valores de los atributos del ensamblado
 
-<Assembly: AssemblyTitle("CinepolisInterfaz")> 
+<Assembly: AssemblyTitle("Cetipolis")>
 <Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("")> 
-<Assembly: AssemblyProduct("CinepolisInterfaz")> 
+<Assembly: AssemblyCompany("")>
+<Assembly: AssemblyProduct("Cetipolis")>
 <Assembly: AssemblyCopyright("Copyright ©  2016")> 
 <Assembly: AssemblyTrademark("")> 
 

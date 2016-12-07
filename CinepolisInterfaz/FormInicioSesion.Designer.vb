@@ -28,6 +28,9 @@ Partial Class FormInicioSesion
         Me.lblNombre = New System.Windows.Forms.Label()
         Me.txtUsuario = New System.Windows.Forms.TextBox()
         Me.lblUsuario = New System.Windows.Forms.Label()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnIngresar
@@ -77,6 +80,21 @@ Partial Class FormInicioSesion
         Me.lblUsuario.TabIndex = 4
         Me.lblUsuario.Text = "Usuario"
         '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AyudaToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(274, 24)
+        Me.MenuStrip1.TabIndex = 5
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'AyudaToolStripMenuItem
+        '
+        Me.AyudaToolStripMenuItem.Name = "AyudaToolStripMenuItem"
+        Me.AyudaToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
+        Me.AyudaToolStripMenuItem.Text = "Ayuda"
+        '
         'FormInicioSesion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -89,14 +107,18 @@ Partial Class FormInicioSesion
         Me.Controls.Add(Me.lblNombre)
         Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.btnIngresar)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.DoubleBuffered = True
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.MaximizeBox = False
         Me.MaximumSize = New System.Drawing.Size(290, 340)
         Me.MinimumSize = New System.Drawing.Size(290, 340)
         Me.Name = "FormInicioSesion"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Iniciar sesión"
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -106,5 +128,6 @@ Partial Class FormInicioSesion
     Friend WithEvents lblNombre As System.Windows.Forms.Label
     Friend WithEvents txtUsuario As System.Windows.Forms.TextBox
     Friend WithEvents lblUsuario As System.Windows.Forms.Label
-
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents AyudaToolStripMenuItem As ToolStripMenuItem
 End Class
